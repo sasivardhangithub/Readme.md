@@ -1,0 +1,19 @@
+SELECT cust_marital_status, COUNT(*) AS number_of_customers FROM sh.customers GROUP BY cust_marital_status;
+
+SELECT cust_gender, AVG(cust_year_of_birth) AS avg_birth_year FROM sh.customers GROUP BY cust_gender;
+
+SELECT prod_category, AVG(prod_list_price) AS avg_list_price FROM sh.products GROUP BY prod_category;
+
+SELECT prod_subcategory, MAX(prod_min_price) AS highest_min_price FROM sh.products GROUP BY prod_subcategory;
+
+SELECT channel_id, SUM(amount_sold) AS total_sales_amount FROM sh.sales GROUP BY channel_id;
+
+SELECT prod_id, SUM(quantity_sold) AS total_quantity_sold FROM sh.sales GROUP BY prod_id;
+
+SELECT promo_id, AVG(amount_sold) AS avg_sales_amount FROM sh.sales GROUP BY promo_id;
+
+SELECT promo_category, SUM(promo_cost) AS total_promo_cost FROM sh.promotions GROUP BY promo_category;
+
+SELECT country_region_id, COUNT(*) AS country_count FROM sh.countries GROUP BY country_region_id;
+
+SELECT prod_id, AVG(unit_cost) AS avg_unit_cost FROM sh.costs GROUP BY prod_id;
