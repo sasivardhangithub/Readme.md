@@ -1,0 +1,3 @@
+select promo_id, promo_name, promo_cost, promo_category
+from sh.promotions 
+where promo_cost > 1000;
