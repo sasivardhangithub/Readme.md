@@ -1,0 +1,3 @@
+select country_id, country_name, counrty_region_id
+from sh.countries 
+where country_region_id = 52790;
