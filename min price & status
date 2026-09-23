@@ -1,0 +1,3 @@
+select *
+from sh.products 
+where prod_min_price < 50 and prod_status = 'available';
