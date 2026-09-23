@@ -1,0 +1,9 @@
+SELECT channel_id, SUM(amount_sold) AS total_sales_amount FROM sh.sales WHERE amount_sold > 500 GROUP BY channel_id;
+
+SELECT prod_category, AVG(prod_list_price) AS avg_list_price FROM sh.products WHERE prod_list_price > 100 GROUP BY prod_category;
+
+SELECT cust_marital_status, COUNT(*) AS number_of_customers FROM sh.customers WHERE cust_year_of_birth > 1970 GROUP BY cust_marital_status;
+
+SELECT promo_category, AVG(promo_cost) AS avg_promo_cost FROM sh.promotions WHERE promo_cost > 500 GROUP BY promo_category;
+
+SELECT prod_id, MAX(unit_price) AS max_unit_price FROM sh.costs WHERE unit_cost > 50 GROUP BY prod_id;
