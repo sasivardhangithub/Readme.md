@@ -1,0 +1,3 @@
+select prod_id, cust_id, qunatity_sold, amount_sold
+--from sh.sales 
+--where amount_sold > 1000;
